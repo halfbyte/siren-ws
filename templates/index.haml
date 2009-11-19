@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title The call of the sirens
+  %body
+    %h1 Sirens
+    %ul
+      %li
+        %a(href='/blue') /blue
+      %li 
+        %a(href='/red') /red
+    %h1 How
+    :textile
+      To trigger the mindmatters sirens, POST to one of the URLs given above. Available Params are:
+      
+      * style = (alert|blink)
+      * count = 1..10
+      
+      The call returns a text/plain response that starts with OK or FAIL to signal success or error.
+      In case of OK, it also returns the siren protocol message.

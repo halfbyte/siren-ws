@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title The call of the sirens
+  %body
+    %h1 Siren "#{@color}"
+    %form(action="/#{@color}" method="post")
+      %p
+        %label
+          Style
+          %select(name="style")
+            %option(selected) Blink
+            %option Alert
+      %p
+        %label
+          Count
+          %select(name="count")
+            %option 1
+            %option 2
+            %option(selected) 3
+            %option 4
+            %option 5
+            %option 6
+            %option 7
+            %option 8
+            %option 9
+            %option 10
+      
+      %p
+        %input(type="submit" value="Send")
+        
